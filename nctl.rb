@@ -5,21 +5,21 @@
 class Nctl < Formula
   desc "Nirmata CLI to scan and remediate Kubernetes manifests, Terraform, and more!"
   homepage "https://docs.nirmata.io/nctl/"
-  version "4.2.0-test.2"
+  version "4.2.0-test.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.2/nctl_4.2.0-test.2_macos_amd64.zip"
-      sha256 "813c68a234288ef4c37c4353fba81e0d2d158f1728fba85aa9812c32470b0258"
-
+      url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.3/nctl_4.2.0-test.3_macos_amd64.zip"
+      sha256 "250298c5107902c29a7c06591b5862c50ffd0800a507c6ed8813017f6eb80d87"
 
       def install
         bin.install "nctl"
       end
     end
     on_arm do
-      url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.2/nctl_4.2.0-test.2_macos_arm64.zip"
-      sha256 "35eb22c61ca0786ac4cff3f5176d7d082ff14ba704b36f75cc2e7a0abe7c00b8"
+      url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.3/nctl_4.2.0-test.3_macos_arm64.zip"
+      sha256 "3fd78db7505dae91c4f93a43b5305c94263da7c4c1851ffdde9d4b72112cf6cf"
+
       def install
         bin.install "nctl"
       end
@@ -29,8 +29,9 @@ class Nctl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.2/nctl_4.2.0-test.2_linux_amd64.zip"
-        sha256 "0c9e643e27229a56fdef3877ffaf8cc2fa54e2d5d75f22447c11bb4ecd83d613"
+        url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.3/nctl_4.2.0-test.3_linux_amd64.zip"
+        sha256 "cbf3f607cda61852d42cfcb2c7e6923d16537adb40276883cd0599cd85bcf827"
+
         def install
           bin.install "nctl"
         end
@@ -38,8 +39,9 @@ class Nctl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.2/nctl_4.2.0-test.2_linux_arm64.zip"
-        sha256 "e716a61a9bb24384831c9acbfa7191bf3613ba4c472a2993a1a62b071a2e5827"
+        url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.3/nctl_4.2.0-test.3_linux_arm64.zip"
+        sha256 "c619fdd346bedfa4e28107f55143c883013855fdc2194eef2af99a4012f4601d"
+
         def install
           bin.install "nctl"
         end
