@@ -5,20 +5,20 @@
 class Nctl < Formula
   desc "Nirmata CLI to scan and remediate Kubernetes manifests, Terraform, and more!"
   homepage "https://docs.nirmata.io/nctl/"
-  version "4.2.0-test.3"
+  version "4.2.0-test.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.3/nctl_4.2.0-test.3_macos_amd64.zip"
-      sha256 "250298c5107902c29a7c06591b5862c50ffd0800a507c6ed8813017f6eb80d87"
+      url "https://dl.nirmata.io/nctl/nctl_v4.2.0-test.4/nctl_4.2.0-test.4_macos_amd64.zip"
+      sha256 "0e802d1ea069e73d0d512717202ac6eb59f7962cefee84952dbf56c404993d73"
 
       def install
         bin.install "nctl"
       end
     end
     on_arm do
-      url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.3/nctl_4.2.0-test.3_macos_arm64.zip"
-      sha256 "3fd78db7505dae91c4f93a43b5305c94263da7c4c1851ffdde9d4b72112cf6cf"
+      url "https://dl.nirmata.io/nctl/nctl_v4.2.0-test.4/nctl_4.2.0-test.4_macos_arm64.zip"
+      sha256 "610f8ac1dfc52c022d5b0b4531645fffbf5a86c13af37f6ccffcc0495028c036"
 
       def install
         bin.install "nctl"
@@ -29,8 +29,8 @@ class Nctl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.3/nctl_4.2.0-test.3_linux_amd64.zip"
-        sha256 "cbf3f607cda61852d42cfcb2c7e6923d16537adb40276883cd0599cd85bcf827"
+        url "https://dl.nirmata.io/nctl/nctl_v4.2.0-test.4/nctl_4.2.0-test.4_linux_amd64.zip"
+        sha256 "cab9ce5b739ead62b052eb32bfabf0a2a4a975624f2579d1b857b4fe03c14839"
 
         def install
           bin.install "nctl"
@@ -39,8 +39,8 @@ class Nctl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/JimBugwadia/go-nctl/releases/download/v4.2.0-test.3/nctl_4.2.0-test.3_linux_arm64.zip"
-        sha256 "c619fdd346bedfa4e28107f55143c883013855fdc2194eef2af99a4012f4601d"
+        url "https://dl.nirmata.io/nctl/nctl_v4.2.0-test.4/nctl_4.2.0-test.4_linux_arm64.zip"
+        sha256 "da2f09760f6c5bd8c4a5a3d435bd7db46802e9478e20f7df4c13c002d6445cdd"
 
         def install
           bin.install "nctl"
