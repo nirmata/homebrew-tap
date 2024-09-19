@@ -5,20 +5,20 @@
 class Nctl < Formula
   desc "Nirmata CLI to scan and remediate Kubernetes manifests, Terraform, and more!"
   homepage "https://docs.nirmata.io/nctl/"
-  version "4.2.2"
+  version "4.2.3-rc.1"
 
   on_macos do
     on_intel do
-      url "https://dl.nirmata.io/nctl/nctl_4.2.2/nctl_4.2.2_macos_amd64.zip"
-      sha256 "9860f20cc3c5883c8523f299e18873ae034c6a85bcb47140b064af79470571a7"
+      url "https://dl.nirmata.io/nctl/nctl_4.2.3-rc.1/nctl_4.2.3-rc.1_macos_amd64.zip"
+      sha256 "a6f43325ab7a78fe9050eb641014fc40a9bba08c796114333d180089861c3bdf"
 
       def install
         bin.install "nctl"
       end
     end
     on_arm do
-      url "https://dl.nirmata.io/nctl/nctl_4.2.2/nctl_4.2.2_macos_arm64.zip"
-      sha256 "2a3eac6801fe7d069c5a0cfb2db8e770382c67933243cbc9abf6b197ed7c9737"
+      url "https://dl.nirmata.io/nctl/nctl_4.2.3-rc.1/nctl_4.2.3-rc.1_macos_arm64.zip"
+      sha256 "8f1d9b918ff082867e102651b93ff31086d664e97562cc85e41febe46506e5cc"
 
       def install
         bin.install "nctl"
@@ -29,8 +29,8 @@ class Nctl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.2.2/nctl_4.2.2_linux_amd64.zip"
-        sha256 "72bd43fd287e5e59c2f6c028d2f16ced2fff8344cceda71632227d1b5fdc1781"
+        url "https://dl.nirmata.io/nctl/nctl_4.2.3-rc.1/nctl_4.2.3-rc.1_linux_amd64.zip"
+        sha256 "2536eefbfc2dd60191e0f359e340a944126a653a288591fa27e4a688ba640821"
 
         def install
           bin.install "nctl"
@@ -39,8 +39,8 @@ class Nctl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.2.2/nctl_4.2.2_linux_arm64.zip"
-        sha256 "d30a3371450f56d98b21092ccf6fdd6ec95923e249111a52b31c7197911b84b2"
+        url "https://dl.nirmata.io/nctl/nctl_4.2.3-rc.1/nctl_4.2.3-rc.1_linux_arm64.zip"
+        sha256 "eff8fc1ec7f21b7e99e082892bf9b8648d9bef582a3a586391e98361065cbcec"
 
         def install
           bin.install "nctl"
