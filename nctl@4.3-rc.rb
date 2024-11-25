@@ -5,20 +5,20 @@
 class NctlAT43Rc < Formula
   desc "Nirmata CLI to scan and remediate Kubernetes manifests, Terraform, and more!"
   homepage "https://docs.nirmata.io/nctl/"
-  version "4.3.3-rc.1"
+  version "4.3.3-rc.2"
 
   on_macos do
     on_intel do
-      url "https://dl.nirmata.io/nctl/nctl_4.3.3-rc.1/nctl_4.3.3-rc.1_macos_amd64.zip"
-      sha256 "5892858aae9c221680f359c446451ecdaa9f91fce5633a0e279bb5b16ad07c67"
+      url "https://dl.nirmata.io/nctl/nctl_4.3.3-rc.2/nctl_4.3.3-rc.2_macos_amd64.zip"
+      sha256 "c0eb772bfd4760452183c4a24e0b798b4ae7075419b40b5e5d62016ae437cd2b"
 
       def install
         bin.install "nctl"
       end
     end
     on_arm do
-      url "https://dl.nirmata.io/nctl/nctl_4.3.3-rc.1/nctl_4.3.3-rc.1_macos_arm64.zip"
-      sha256 "5e8896b7520975d89ec55959ec9f9a117d41be6d278face61447c20ed4ef4e54"
+      url "https://dl.nirmata.io/nctl/nctl_4.3.3-rc.2/nctl_4.3.3-rc.2_macos_arm64.zip"
+      sha256 "d0d30db77d9ac8dd09409e34d0f9e0f2fd6ea1ec63f6cbb3587a9a51df5f82f8"
 
       def install
         bin.install "nctl"
@@ -29,8 +29,8 @@ class NctlAT43Rc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.3.3-rc.1/nctl_4.3.3-rc.1_linux_amd64.zip"
-        sha256 "46f11a4713f57ac6a95881746021f48f1b739c7a15f28ef0fcff2a26aa17031b"
+        url "https://dl.nirmata.io/nctl/nctl_4.3.3-rc.2/nctl_4.3.3-rc.2_linux_amd64.zip"
+        sha256 "bde8bf1f7c0b1998f40b01efb6c8af49a135d6dfec264c5a2a9c796b047ac85b"
 
         def install
           bin.install "nctl"
@@ -39,8 +39,8 @@ class NctlAT43Rc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.3.3-rc.1/nctl_4.3.3-rc.1_linux_arm64.zip"
-        sha256 "f032bf5ad74ad52093741ee12d255096332dd13daf283c3d689c576f72025433"
+        url "https://dl.nirmata.io/nctl/nctl_4.3.3-rc.2/nctl_4.3.3-rc.2_linux_arm64.zip"
+        sha256 "c8527972db24d14bca4e2536f61a0a7c75f667beb4e2f5963bb3cb1268d62987"
 
         def install
           bin.install "nctl"
