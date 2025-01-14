@@ -5,20 +5,20 @@
 class NctlAT43Rc < Formula
   desc "Nirmata CLI to scan and remediate Kubernetes manifests, Terraform, and more!"
   homepage "https://docs.nirmata.io/nctl/"
-  version "4.3.5-rc.2"
+  version "4.3.5-rc.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.nirmata.io/nctl/nctl_4.3.5-rc.2/nctl_4.3.5-rc.2_macos_amd64.zip"
-      sha256 "be3b94522d581a2d098bf8078845a91c77a4bf2e6ee8bb83fdbe4e785a5eb9af"
+      url "https://dl.nirmata.io/nctl/nctl_4.3.5-rc.3/nctl_4.3.5-rc.3_macos_amd64.zip"
+      sha256 "1ccc2d4c9d43dd42b9017f59640cf706edf6385dfe7354b69850d28530553659"
 
       def install
         bin.install "nctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://dl.nirmata.io/nctl/nctl_4.3.5-rc.2/nctl_4.3.5-rc.2_macos_arm64.zip"
-      sha256 "369ff3b56cad7df7925117b83795d27c7601feed428861f0bb5f53c6f0bb8a76"
+      url "https://dl.nirmata.io/nctl/nctl_4.3.5-rc.3/nctl_4.3.5-rc.3_macos_arm64.zip"
+      sha256 "79e8d373b494fd17c844158fb89f6d71b736f1e8e6299717c7b0969f1343bc7a"
 
       def install
         bin.install "nctl"
@@ -29,8 +29,8 @@ class NctlAT43Rc < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.3.5-rc.2/nctl_4.3.5-rc.2_linux_amd64.zip"
-        sha256 "f0f1ca8acb73f64dbc328dfca4610e92a73345aea5e2ee253e039d9b834face4"
+        url "https://dl.nirmata.io/nctl/nctl_4.3.5-rc.3/nctl_4.3.5-rc.3_linux_amd64.zip"
+        sha256 "9eb1b604fd53331c6fd586981e2ef4d49cc59fd771c53af5d0ff81f0c5cd7800"
 
         def install
           bin.install "nctl"
@@ -39,8 +39,8 @@ class NctlAT43Rc < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.3.5-rc.2/nctl_4.3.5-rc.2_linux_arm64.zip"
-        sha256 "d8e4cce13b4cf26b4f01e10fa7d3d5e2c7202ed0f14d37ab6a2502b277dbd6d2"
+        url "https://dl.nirmata.io/nctl/nctl_4.3.5-rc.3/nctl_4.3.5-rc.3_linux_arm64.zip"
+        sha256 "54c1488dfef7ddd6fc27ae6726fa93b5e3ea7b12fde42147e6ceb57cc2e2d83b"
 
         def install
           bin.install "nctl"
