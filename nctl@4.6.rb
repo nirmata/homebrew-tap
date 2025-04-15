@@ -5,20 +5,20 @@
 class NctlAT46 < Formula
   desc "GA releases for the Nirmata CLI to scan and remediate Kubernetes manifests, Terraform, and more!"
   homepage "https://docs.nirmata.io/nctl/"
-  version "4.6.0"
+  version "4.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.nirmata.io/nctl/nctl_4.6.0/nctl_4.6.0_macos_amd64.zip"
-      sha256 "2d13030179f926b17f445a2d780d99b492835c6c18cbd02976787e7fadec366f"
+      url "https://dl.nirmata.io/nctl/nctl_4.6.1/nctl_4.6.1_macos_amd64.zip"
+      sha256 "d6861f6c8c9b2f1c2b6599b1533db6f169d63cad1bf6b4f3c67ce2bc70920dec"
 
       def install
         bin.install "nctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://dl.nirmata.io/nctl/nctl_4.6.0/nctl_4.6.0_macos_arm64.zip"
-      sha256 "d49e66cdb09d7b52526c7b7802e03f40d55e6aed15ac2d5fc4446f446a841a5a"
+      url "https://dl.nirmata.io/nctl/nctl_4.6.1/nctl_4.6.1_macos_arm64.zip"
+      sha256 "642e8d9c0011ba1b42d201c94872cb0205d2c59b5aabe8397afd95bed89fee19"
 
       def install
         bin.install "nctl"
@@ -29,8 +29,8 @@ class NctlAT46 < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.6.0/nctl_4.6.0_linux_amd64.zip"
-        sha256 "587f84056e0dc2e6c3393caa9be997c269669df2c0729371c324f1d804cb5018"
+        url "https://dl.nirmata.io/nctl/nctl_4.6.1/nctl_4.6.1_linux_amd64.zip"
+        sha256 "6a7c3c8333301644787d6980c5afbec9209339a4feda808cb39b9077aec041af"
 
         def install
           bin.install "nctl"
@@ -39,8 +39,8 @@ class NctlAT46 < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.6.0/nctl_4.6.0_linux_arm64.zip"
-        sha256 "4aaea80fdc1e9d9ff0e8abb8ea765fe1267b664438c5a0e8fb9b7cb2b32e0700"
+        url "https://dl.nirmata.io/nctl/nctl_4.6.1/nctl_4.6.1_linux_arm64.zip"
+        sha256 "d5429f23c4d91dd77c0375a9e90cb9c6e6dd7fe16e6eb5596a2285e16c077cc7"
 
         def install
           bin.install "nctl"
