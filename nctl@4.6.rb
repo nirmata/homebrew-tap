@@ -5,20 +5,20 @@
 class NctlAT46 < Formula
   desc "GA releases for the Nirmata CLI to scan and remediate Kubernetes manifests, Terraform, and more!"
   homepage "https://docs.nirmata.io/nctl/"
-  version "4.6.2"
+  version "4.6.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.nirmata.io/nctl/nctl_4.6.2/nctl_4.6.2_macos_amd64.zip"
-      sha256 "e9535973e6ba0cc365a71cc6a0c520c5b38a713b6ac2c30bca43b33d0e32d13b"
+      url "https://dl.nirmata.io/nctl/nctl_4.6.3/nctl_4.6.3_macos_amd64.zip"
+      sha256 "b1536bd997dbd39d627cfb0794e682fbb84de69504b3a6ec3107e5549433f150"
 
       def install
         bin.install "nctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://dl.nirmata.io/nctl/nctl_4.6.2/nctl_4.6.2_macos_arm64.zip"
-      sha256 "9e921e630b1ee40ed63aea4d86b8e6b425a0585f45066493d931389989fbde4f"
+      url "https://dl.nirmata.io/nctl/nctl_4.6.3/nctl_4.6.3_macos_arm64.zip"
+      sha256 "78cdd1a308c933ef4155c792edeaa1e3e0c6bec5ebbbba8f28689bf5b2880a7a"
 
       def install
         bin.install "nctl"
@@ -27,24 +27,18 @@ class NctlAT46 < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.6.2/nctl_4.6.2_linux_amd64.zip"
-        sha256 "97a4b20698e0fde5e15eeb26a08872f2a062405f10d8cd3a663fed860d79618f"
-
-        def install
-          bin.install "nctl"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://dl.nirmata.io/nctl/nctl_4.6.3/nctl_4.6.3_linux_amd64.zip"
+      sha256 "891958374625bce39b01d6b5ddc7b52253f5635939cc64679c6571a0b6e8ee85"
+      def install
+        bin.install "nctl"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://dl.nirmata.io/nctl/nctl_4.6.2/nctl_4.6.2_linux_arm64.zip"
-        sha256 "5c20a8187b29ee72885a8235f041868a89c2c89bcab7120725eb589a08533441"
-
-        def install
-          bin.install "nctl"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://dl.nirmata.io/nctl/nctl_4.6.3/nctl_4.6.3_linux_arm64.zip"
+      sha256 "61bbf39ce81beb1f77bcc44d15d80f8442ba003c7f0434725c51eedc82d3f20e"
+      def install
+        bin.install "nctl"
       end
     end
   end
