@@ -10,7 +10,7 @@ class KyvernoMcpAT00 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.0.1/kyverno-mcp_0.0.1_macos_amd64.zip"
-      sha256 "a6ea32c3fc87782df61a233fe5a5d484a4099be16627a7c81a0576fc0dbda225"
+      sha256 "a23f94910650b2380143d6059b932a9f8fec26c19209cec2b1aeead28ff34735"
 
       def install
         bin.install "kyverno-mcp"
@@ -18,7 +18,7 @@ class KyvernoMcpAT00 < Formula
     end
     if Hardware::CPU.arm?
       url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.0.1/kyverno-mcp_0.0.1_macos_arm64.zip"
-      sha256 "9678ebdf921f0de561de9fbc6db0d3982f5c0ec08ea25c024c3c0023f08ea6e2"
+      sha256 "03dd4215270cf95f13efc21936a12a5fa102405f6aa9d9e3f043bdfef0cd251c"
 
       def install
         bin.install "kyverno-mcp"
@@ -29,14 +29,14 @@ class KyvernoMcpAT00 < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.0.1/kyverno-mcp_0.0.1_linux_amd64.zip"
-      sha256 "cd9bfb497dc584fffeda7098524f476c7ac8fd412336b18d6c574fe76095a547"
+      sha256 "14ef031e9464e8ca0701b4a7300e74656be2db23dc20b0feb7cc7cb0e18b3271"
       def install
         bin.install "kyverno-mcp"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.0.1/kyverno-mcp_0.0.1_linux_arm64.zip"
-      sha256 "dbd90a0000453ce54d1afd434a7f0d0c7e603a043d64af30b675fc0ccabab1cd"
+      sha256 "8e3de23d9ef717a2e0f1917437f0691d2f2301077eae445f142dde8a27904be2"
       def install
         bin.install "kyverno-mcp"
       end
