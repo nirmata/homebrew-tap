@@ -9,7 +9,7 @@ class KyvernoMcp < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://nirmata-downloads.s3.us-east-2.amazonaws.com/kyverno-mcp/kyverno-mcp_0.0.1/kyverno-mcp_0.0.1_macos_amd64.zip"
+      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.0.1/kyverno-mcp_0.0.1_macos_amd64.zip"
       sha256 "a23f94910650b2380143d6059b932a9f8fec26c19209cec2b1aeead28ff34735"
 
       def install
@@ -17,7 +17,7 @@ class KyvernoMcp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://nirmata-downloads.s3.us-east-2.amazonaws.com/kyverno-mcp/kyverno-mcp_0.0.1/kyverno-mcp_0.0.1_macos_arm64.zip"
+      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.0.1/kyverno-mcp_0.0.1_macos_arm64.zip"
       sha256 "03dd4215270cf95f13efc21936a12a5fa102405f6aa9d9e3f043bdfef0cd251c"
 
       def install
