@@ -5,20 +5,20 @@
 class KyvernoMcpAT02 < Formula
   desc "GA release 0.2 of Kyverno MCP Server"
   homepage "https://docs.nirmata.io/kyverno-mcp/"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.2.0/kyverno-mcp_0.2.0_macos_amd64.zip"
-      sha256 "63e9f9e2c33573ecfaf1a17f1644364574141aef87f1b278ada283b4b7b79234"
+      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.2.1/kyverno-mcp_0.2.1_macos_amd64.zip"
+      sha256 "a1126718c7bbbfc3a902eea6fac0e1c640d5663eb4910c2711ca31a7e9509eec"
 
       def install
         bin.install "kyverno-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.2.0/kyverno-mcp_0.2.0_macos_arm64.zip"
-      sha256 "fd3cbfe223ea3ad88c889526019f96aaa5c1d77c7b0fe1a4d1c504b21be7e104"
+      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.2.1/kyverno-mcp_0.2.1_macos_arm64.zip"
+      sha256 "226784b87b56e8ad8e3752f6973528e2798d515fa583b2af43f241d1017c1367"
 
       def install
         bin.install "kyverno-mcp"
@@ -28,15 +28,15 @@ class KyvernoMcpAT02 < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.2.0/kyverno-mcp_0.2.0_linux_amd64.zip"
-      sha256 "df15b2f128a53fe4588569d34e2673845efa570224c94123c7294f2101400e68"
+      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.2.1/kyverno-mcp_0.2.1_linux_amd64.zip"
+      sha256 "a1a06b80e4e025688d85ccc20e32f03dba2e9fbaaae0bbf20e38859fe54353d0"
       def install
         bin.install "kyverno-mcp"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.2.0/kyverno-mcp_0.2.0_linux_arm64.zip"
-      sha256 "87e71e3491e578dd388cc8090664119fcc7217308221e1bec609d6d751fc1bc9"
+      url "https://dl.nirmata.io/kyverno-mcp/kyverno-mcp_0.2.1/kyverno-mcp_0.2.1_linux_arm64.zip"
+      sha256 "5f47b3d85d2e7e13bb8d930825dea1ef884d1c078881ee7a5816cfd11f0c30d7"
       def install
         bin.install "kyverno-mcp"
       end
