@@ -10,7 +10,7 @@ class NctlAT410 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://dl.nirmata.io/nctl/nctl_4.10.2/nctl_4.10.2_macos_amd64.zip"
-      sha256 "f7af455d0eadf36d00dce0ec5a8d716666ac25619baeffd6718af77a3fea975c"
+      sha256 "8b2c15c8a99f727a85a7c81fd9cce66d5f22843de218011a2291f00cf3c91fae"
 
       def install
         bin.install "nctl"
@@ -18,7 +18,7 @@ class NctlAT410 < Formula
     end
     if Hardware::CPU.arm?
       url "https://dl.nirmata.io/nctl/nctl_4.10.2/nctl_4.10.2_macos_arm64.zip"
-      sha256 "5636dd575f65f5f20e7edcb43e13a1eeb2f2ab6dacef423eb76c438b942dd7b5"
+      sha256 "2c62832966ce65014801cc750ef5fe67eeb7b9ca503652464012cae591b2cdba"
 
       def install
         bin.install "nctl"
@@ -29,14 +29,14 @@ class NctlAT410 < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://dl.nirmata.io/nctl/nctl_4.10.2/nctl_4.10.2_linux_amd64.zip"
-      sha256 "fca049bd55ed6c685f90c9e5ac26b28cd42a4c57c37e6619aecf73d2bd10f0bb"
+      sha256 "8037042ed62d17e21cab081330d0f054b886427b66432e187c3fa7623c917764"
       def install
         bin.install "nctl"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://dl.nirmata.io/nctl/nctl_4.10.2/nctl_4.10.2_linux_arm64.zip"
-      sha256 "d216f214c2d1a7d7d3fea4abd734da1528bcb56e4b539fd22f84218df9b19698"
+      sha256 "282dc397ef9ce7d792d0cff85f7b3aff5d645d854e81e3bbc6693725fb9514cd"
       def install
         bin.install "nctl"
       end
