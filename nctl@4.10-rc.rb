@@ -5,20 +5,20 @@
 class NctlAT410Rc < Formula
   desc "RC releases for the Nirmata CLI to scan and remediate Kubernetes manifests, Terraform, and more!"
   homepage "https://docs.nirmata.io/nctl/"
-  version "4.10.7-rc.2"
+  version "4.10.7-rc.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.nirmata.io/nctl/nctl_4.10.7-rc.2/nctl_4.10.7-rc.2_macos_amd64.zip"
-      sha256 "d17e31be76988d2d6ecd83f1ad078e9700a17f8337015ce1e84f1ad0242b1857"
+      url "https://dl.nirmata.io/nctl/nctl_4.10.7-rc.3/nctl_4.10.7-rc.3_macos_amd64.zip"
+      sha256 "6401904975e44bbe1dd25a190dd1151520513531377b4cf6ca1c76efd41a6552"
 
       def install
         bin.install "nctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://dl.nirmata.io/nctl/nctl_4.10.7-rc.2/nctl_4.10.7-rc.2_macos_arm64.zip"
-      sha256 "84019ae8388a184827a2af5d740c3191a188062ef3c423ff912cbe3b1ab8e4b2"
+      url "https://dl.nirmata.io/nctl/nctl_4.10.7-rc.3/nctl_4.10.7-rc.3_macos_arm64.zip"
+      sha256 "844ed537d0407429c0471f7c6672c3f925dbecb73998baf134c7278744216d3d"
 
       def install
         bin.install "nctl"
@@ -28,15 +28,15 @@ class NctlAT410Rc < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://dl.nirmata.io/nctl/nctl_4.10.7-rc.2/nctl_4.10.7-rc.2_linux_amd64.zip"
-      sha256 "8c8fc1278ce7abd7276764d227800bc92ef6a852ec096688b07177da0339c64d"
+      url "https://dl.nirmata.io/nctl/nctl_4.10.7-rc.3/nctl_4.10.7-rc.3_linux_amd64.zip"
+      sha256 "0ce2484537d9c3d9843ac801d4184a4eaa38bda1a69be76150bb235436b83053"
       def install
         bin.install "nctl"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://dl.nirmata.io/nctl/nctl_4.10.7-rc.2/nctl_4.10.7-rc.2_linux_arm64.zip"
-      sha256 "82a50cfd5015465970bf08a3ba3a77eeb9314bc2cf35e4086c161cdf31af788e"
+      url "https://dl.nirmata.io/nctl/nctl_4.10.7-rc.3/nctl_4.10.7-rc.3_linux_arm64.zip"
+      sha256 "c93dd810429430f018d288fdee15b4edf358ff993db83b046984f0ec20c97dc5"
       def install
         bin.install "nctl"
       end
