@@ -5,21 +5,21 @@
 class Ottoflow < Formula
   desc "Kubernetes-native workflow engine CLI"
   homepage "https://github.com/nirmata/ottoflow"
-  version "0.1.1"
+  version "0.1.2"
   license "BUSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nirmata/ottoflow/releases/download/v0.1.1/ottoflow_0.1.1_darwin_amd64.tar.gz"
-      sha256 "b1bdf80fee8c62517d8375ce14f630901612a63a4208df56724bc8b1b23bc45e"
+      url "https://github.com/nirmata/ottoflow/releases/download/v0.1.2/ottoflow_0.1.2_darwin_amd64.tar.gz"
+      sha256 "b0d240679784790bed61a2da8add3e3570ad9247ad3fb608b1aeebd590bd6782"
 
       define_method(:install) do
         bin.install "ottoflow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nirmata/ottoflow/releases/download/v0.1.1/ottoflow_0.1.1_darwin_arm64.tar.gz"
-      sha256 "55fde68da0730746020bcdfe674116de066210225faac6bba1529e98a475faf0"
+      url "https://github.com/nirmata/ottoflow/releases/download/v0.1.2/ottoflow_0.1.2_darwin_arm64.tar.gz"
+      sha256 "4c5367b32d4ca1a984259e970da25b48eb07562ff7cf0189ffde62005343bdd2"
 
       define_method(:install) do
         bin.install "ottoflow"
@@ -29,15 +29,15 @@ class Ottoflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nirmata/ottoflow/releases/download/v0.1.1/ottoflow_0.1.1_linux_amd64.tar.gz"
-      sha256 "97e58eb3c147f57bfeadc3d8181866869717992cad74c1ec7e55401fd76d9bf6"
+      url "https://github.com/nirmata/ottoflow/releases/download/v0.1.2/ottoflow_0.1.2_linux_amd64.tar.gz"
+      sha256 "650a466871979e9cd47cf125ad8d65b4ce0067b99c9e09e702340a63ed5a6dc1"
       define_method(:install) do
         bin.install "ottoflow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nirmata/ottoflow/releases/download/v0.1.1/ottoflow_0.1.1_linux_arm64.tar.gz"
-      sha256 "98101c67db912ac1b71a4ab7b4fcdf98b3a56f4ea3dab63176a2935c6329e38d"
+      url "https://github.com/nirmata/ottoflow/releases/download/v0.1.2/ottoflow_0.1.2_linux_arm64.tar.gz"
+      sha256 "8cf0f4996411daff9a940796e3323a892e0dd65d08d4578d1c5367fbf11979e6"
       define_method(:install) do
         bin.install "ottoflow"
       end
